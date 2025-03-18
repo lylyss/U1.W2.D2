@@ -4,21 +4,45 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function chiEmaggiore(num1, num2) {
+  return num1 > num2 ? num1 : num2;
+}
+console.log(chiEmaggiore(300, 299));
+
+let x = 55;
+let y = 56;
+if (x > y) {
+  console.log(x + " magiore " + y);
+} else {
+  console.log(x + " minore " + y);
+}
+
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function Numero(numero) {
+  if (numero !== 5) {
+    console.log("not equal");
+  }
+}
+Numero(50);
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("divisibile per 5", 2 % 5 === 0);
+console.log("divisibile per 5", 10 % 5 === 0);
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
+let Numero1;
+let Numero2;
+let Numero3;
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -76,10 +100,10 @@
 */
 
 const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
