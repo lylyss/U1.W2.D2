@@ -40,9 +40,6 @@ console.log("divisibile per 5", 10 % 5 === 0);
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
-let Numero1;
-let Numero2;
-let Numero3;
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -124,9 +121,24 @@ const me = {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const UnArray = [];
+UnArray.push(1);
+UnArray.push(2);
+UnArray.push(3);
+UnArray.push(4);
+UnArray.push(5);
+UnArray.push(6);
+UnArray.push(7);
+UnArray.push(8);
+UnArray.push(9);
+UnArray.push(10);
+console.log(UnArray);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+UnArray.splice(9, 1, 100);
+console.log(UnArray);
