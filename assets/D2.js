@@ -4,11 +4,6 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function chiEmaggiore(num1, num2) {
-  return num1 > num2 ? num1 : num2;
-}
-console.log(chiEmaggiore(300, 299));
-
 let x = 55;
 let y = 56;
 if (x > y) {
@@ -22,12 +17,10 @@ if (x > y) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function Numero(numero) {
-  if (numero !== 5) {
-    console.log("not equal");
-  }
+const numero10 = 10;
+if (numero10 !== 5) {
+  console.log("not equal");
 }
-Numero(50);
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
@@ -40,6 +33,13 @@ console.log("divisibile per 5", 10 % 5 === 0);
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
+let somma = x + y;
+let sottr = x - y;
+if (x === 8 || y === 8 || somma === 8 || sottr === 8) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -75,6 +75,7 @@ console.log("divisibile per 5", 10 % 5 === 0);
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
+console.log(" 10 pari ", 10 % 2 === 0);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -103,36 +104,40 @@ const me = {
 };
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.skills.pop();
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const UnArray = [];
-UnArray.push(1);
-UnArray.push(2);
-UnArray.push(3);
-UnArray.push(4);
-UnArray.push(5);
-UnArray.push(6);
-UnArray.push(7);
-UnArray.push(8);
-UnArray.push(9);
-UnArray.push(10);
-console.log(UnArray);
+const unArray = [];
+unArray.push(1);
+unArray.push(2);
+unArray.push(3);
+unArray.push(4);
+unArray.push(5);
+unArray.push(6);
+unArray.push(7);
+unArray.push(8);
+unArray.push(9);
+unArray.push(10);
+console.log(unArray);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
@@ -140,5 +145,7 @@ console.log(UnArray);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-UnArray.splice(9, 1, 100);
-console.log(UnArray);
+const lastIndex = unArray.length - 1;
+unArray.splice(lastIndex, 1, 100);
+
+console.log(unArray);
